@@ -1,0 +1,34 @@
+.header {
+    background-color: #e4e4e4;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #C0C0C0	;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        font-size: 16px;
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        margin-right: 50px;
+        color: #343030;
+        line-height: 150%;
+    }
+    &__logo{
+        max-width: 100px;
+        height: 80px;
+        padding-top: 20px;
+    }
+    &__login{
+        padding-right: 20px;
+        background-color: #FDE047;
+        color:#7F4F17;
+        border-radius: 10%;
+        
+    }
+}
