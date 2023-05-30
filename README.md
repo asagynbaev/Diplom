@@ -1,3 +1,8 @@
+#To work fully this project you need to connect here backend
+In this repository backend part https://github.com/ALTYNm00n/Hana
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
