@@ -1,0 +1,135 @@
+.cart {
+  background-color: #F9f9fb;
+margin-top: 20px;
+  border-radius: 5px;
+}
+
+.cart__container {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+ 
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  background-color: #EC3A4F;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.order-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+input[type="text"] {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-methods label {
+  margin-right: 10px;
+}
+
+.payment-methods input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 20px;
+}
+
+.cart__total p {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.cart__total button {
+  background-color: #FFD700;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal__close {
+  background-color: #EC3A4F;
+  color: #FFACB7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  &:hover {
+    background-color: #f1f1f1;
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+.modal__content .card-image {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.order-form button[type="submit"] {
+  background-color: #4a5eb7;
+  color: balck;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.order-form button[type="submit"]:hover {
+  background-color: #f1f1f1;
+}
+
+.basket__isempty{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 100%;
+}
+
+.place-order{
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 670px;
+  margin-right: auto;
+}

@@ -1,0 +1,140 @@
+.suggestions{
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 100px; 
+
+}
+
+.suggestions-container {
+    padding: 50px;
+    // margin-bottom: 100px;
+    // margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+    .suggestions-header {
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #EC3A4F;
+    }
+    .suggestions-header {
+      background-color: rgba(255, 255, 255, 0.8); /* add a semi-transparent white background */
+      padding: 20px; /* add some padding for spacing */
+      border-radius: 10px; /* add rounded corners */
+      max-width: 500px; /* limit the width of the header */
+      text-align: center; /* center the text */
+    }
+    
+  
+    .suggestions-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  
+      .suggestions-form-container {
+        flex: 1;
+        // margin-right: 50px;
+  
+        form {
+          display: flex;
+          flex-wrap: wrap;
+  
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 100%;
+  
+            label {
+              font-size: 16px;
+              margin-bottom: 5px;
+            }
+  
+            input[type="text"],
+            input[type="email"],
+            textarea {
+              border: 2px solid #ccc;
+              border-radius: 5px;
+              font-size: 16px;
+              padding: 10px;
+              width: 500px;
+  
+              &:focus {
+                outline: none;
+                border-color: #6c63ff;
+              }
+            }
+  
+            textarea {
+              height: 160px;
+              resize: none;
+            }
+          }
+  
+          button[type="submit"] {
+            background-color:#EC3A4F;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 10px 20px;
+            margin-left: 190px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+
+          }
+          
+          button[type="submit"]::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color:  #4a5eb7;
+            border-radius: 50%;
+            opacity: 0.75;
+            transform: translate(-50%, -50%);
+          }
+          
+          button[type="submit"]:hover::before {
+            width: 200%;
+            height: 200%;
+          }
+          
+          button[type="submit"]:focus {
+            outline: none;
+          }
+          
+          button[type="submit"]:active {
+            transform: scale(0.9);
+            background-color:  #4a5eb7 ;
+          }
+          
+          
+          
+        }
+      }
+  
+      .suggestions-image-container {
+        flex: 1;
+  
+        .suggestions-image {
+        margin-left: 70px;
+        margin-bottom: 80px;
+          width: 480px;
+          height: 400px;
+        }
+      }
+    }
+  }
+  .suggestions .suggestions-form-container form button[type="submit"].loading {
+    background-color: green;
+    cursor: not-allowed;
+  }
+  
+  

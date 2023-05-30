@@ -1,0 +1,171 @@
+.admin {
+  background-color: #f7f7f7;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.admin__wrapper {
+  display: flex;
+  justify-content: space-between; /* Изменяем выравнивание на space-between */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Добавляем перенос на следующую строку */
+}
+
+.admin__section {
+  width: 48%; /* Изменяем ширину секций */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin__section--orders {
+  order: 1; /* Изменяем порядок секции заказов */
+}
+
+.admin__section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin__order {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin__order:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin__order-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.admin__order-status {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.admin__order-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.admin__order-actions {
+  margin-top: 10px;
+}
+
+.admin__order-action {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-right: 5px;
+  background-color: #e83e8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin__order-action:hover {
+  background-color: #c62476;
+}
+
+.admin__section--suggestions {
+  order: 2; /* Изменяем порядок секции предложений и вопросов */
+}
+
+.admin__suggestion {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.admin__suggestion-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.admin__suggestion-message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.admin__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin__modal-content {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  width: 400px; /* Увеличиваем ширину модального окна */
+  max-width: 90%; /* Ограничиваем максимальную ширину модального окна */
+}
+
+
+.admin__modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin__modal-description {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.admin__modal-price {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.admin__modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+}
+.admin__suggestion-action {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-top: 10px; /* Add top margin */
+  background-color: #e83e8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin__suggestion-action:hover {
+  background-color: #c62476;
+}
+
+.admin__suggestion {
+  /* ... */
+  display: flex;
+  flex-direction: column; /* Change to vertical layout */
+  justify-content: space-between; /* Add space between name/email/message and delete button */
+}
+
+.admin__suggestion-action--delete {
+  align-self: center; /* Align delete button to the right */
+}
