@@ -44,8 +44,8 @@ const Cart = () => {
       paymentMethod
     };
 
-    // Make an API request to send the data to the specified URL
-    fetch('http://10.129.0.80:8001/api/orders/', {
+    // Would be better to hide this URL to .env
+    fetch('BACKEND_URL/api/orders/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
